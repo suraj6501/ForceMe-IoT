@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCF8C6"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120px"
+        android:fontFamily="serif-monospace"
+        android:text="FORCE ME"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="An IoT based Force Detection System."
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="80px"
+        android:layout_marginRight="70px"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." />
+
+    <TextView
+        android:id="@+id/raspCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="140px"
+        android:text="Click to Connect or Disconnect with Raspberry Pi."
+        android:textColor="#000000" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:backgroundTint="#075E54"
+            android:text="Connect" />
+
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:backgroundTint="#075E54"
+            android:text="Disconnect" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:backgroundTint="#075E54"
+        android:text="Force \n Calculate"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="70dp" />
+
+    <EditText
+        android:id="@+id/forceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30px"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/off"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30px"
+        android:backgroundTint="#075E54"
+        android:text="Off" />
+
+</LinearLayout>
